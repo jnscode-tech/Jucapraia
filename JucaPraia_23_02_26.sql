@@ -77,11 +77,14 @@ INSERT INTO aluguel
 VALUES
 (22,1,'2024-12-08 15:00:00','24-12-08 17:00','4.00','4.00','S','dinheiro',NULL)
 
-
-
 UPDATE equipamento
 SET qtd=49
 where idEquipamento =1
+
+INSERT INTO aluguelequipamento
+(idAluguelEquipamento, idEquipamento, idAluguel, valorItem, valorUnitario, qtd)
+VALUES
+('1','1','1','4.00','2.00','1')
 
 /* EXERCICIO  07  - Inserir 05 itens na tabela equipamento*/
 
@@ -91,13 +94,5 @@ VALUES
 (9,3,'2024-12-10 15:00:00','24-12-10 19:00','14.00','14.00','S','pix',NULL)
 
 
-INSERT INTO aluguel
-(idCliente, idFuncionario, dataHoraRetirada,dataHoraDevolucao,valorAPagar, valorPago, pago, formaPagamento, qtVezes)
-VALUES
-(9,3,'2024-12-10 15:00:00','24-12-10 19:00','14.00','14.00','S','pix',NULL)
 
 
-
-UPDATE equipamento
-SET qtd=
-where idEquipamento =1
