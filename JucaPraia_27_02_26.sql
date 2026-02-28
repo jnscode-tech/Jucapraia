@@ -167,6 +167,10 @@ VALUES
 ('2','5','21.00','3.50','2'),
 ('4','6','9.00','3.00','1')
 
+/* 10)Listar o nome e os contatos de todos os clientes da barraca em ordem alfabética. */
+SELECT nomeCliente, email
+FROM cliente
+ORDER BY nomeCliente Asc
 
 /* 11)Listar o nome e o contato telefônico de todos os funcionários da barraca em ordem alfabética. */
 SELECT nomeFuncionario, celularFuncionario
